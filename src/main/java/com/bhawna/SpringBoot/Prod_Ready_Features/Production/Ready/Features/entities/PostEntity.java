@@ -2,6 +2,7 @@ package com.bhawna.SpringBoot.Prod_Ready_Features.Production.Ready.Features.enti
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 @Entity
 @Getter
@@ -9,6 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "posts")
+@Audited
 public class PostEntity extends AuditableEntity {
 
     @Id
@@ -16,6 +18,22 @@ public class PostEntity extends AuditableEntity {
     private Long id;
     private String title;
     private String description;
+
+    @PrePersist
+    void beforeSave(){
+
+    }
+
+    @PreUpdate
+    void beforeUpdate(){
+
+    }
+
+    @PreRemove
+    void beforeRemove(){
+
+    }
+
 
 
 }
