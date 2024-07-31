@@ -25,8 +25,14 @@ public class PostController {
     }
 
     @PostMapping
-    public PostDTO createNewPost(@RequestBody PostDTO inputDTO){
-        return postService.createNewPost(inputDTO);
+    public PostDTO createNewPost(@RequestBody PostDTO inputPost){
+        return postService.createNewPost(inputPost);
+    }
+
+    @PutMapping(path = "/{postId}")
+    public PostDTO updatePost(@RequestBody PostDTO inputPost,
+                              @PathVariable Long postId){
+        return postService.updatePost(inputPost, postId);
     }
 
 }
