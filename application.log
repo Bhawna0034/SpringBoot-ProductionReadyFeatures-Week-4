@@ -539,3 +539,6 @@ com.bhawna.SpringBoot.Prod_Ready_Features.Production.Ready.Features.exceptions.R
 2024-08-02T12:18:02.015+05:30  INFO 18736 --- [Production-Ready-Features] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-08-02T12:18:02.017+05:30  INFO 18736 --- [Production-Ready-Features] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2024-08-02T12:18:02.530+05:30  INFO 18736 --- [Production-Ready-Features] [http-nio-9000-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 262 ms
+2024-08-02T13:15:30.640+05:30  INFO 18736 --- [Production-Ready-Features] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T13:15:30.643+05:30  INFO 18736 --- [Production-Ready-Features] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T13:15:30.647+05:30  INFO 18736 --- [Production-Ready-Features] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
